@@ -6,6 +6,20 @@
   border-radius: 12px;
 }
 
+.bons {
+  color: var(--white, #fff);
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: -1px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.bons span {
+  color: #4adf86;
+}
+
 .first-part {
   border-bottom: 1px solid #2f3e53;
 }
@@ -16,10 +30,10 @@ h1 {
   font-weight: 800;
   line-height: 40px;
   letter-spacing: -1px;
-  padding: 115px 0 10px 52px;
+  padding: 60px 0 10px 52px;
 }
 
-span {
+.span-project {
   color: #4adf86;
   font-family: "Karla", sans-serif;
   font-size: 40px;
