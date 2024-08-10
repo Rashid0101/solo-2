@@ -99,12 +99,25 @@ function random() {
   let randomOne = "";
   let randomTwo = "";
   for (let i = 0; i < 5; i++) {
-    randomOne += Math.floor(Math.random() * characters.length);
-    randomTwo += Math.floor(Math.random() * characters.length);
+    randomOne += characters[Math.floor(Math.random() * characters.length)];
+    randomTwo += characters[Math.floor(Math.random() * characters.length)];
   }
 
   inputOne.value = randomOne;
   inputTwo.value = randomTwo;
 }
 
-random();
+// Check if this is the first time the site is opened
+if (!localStorage.getItem("visited")) {
+  // Perform actions when the site is opened for the first time
+  // Clear the date or any other action
+  // Example: setting the inputs to an empty string
+  inputOne.value = "";
+  inputTwo.value = "";
+
+  // Run the random function if needed
+  random();
+
+  // Mark that the site has been visited
+  localStorage.setItem("visited", "true");
+}
